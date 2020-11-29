@@ -52,7 +52,7 @@ a {
   justify-content: space-between;
 }
 .logo {
-  width: 200px;
+  width: 150px;
 }
 .nav__btn{
   display: inline-block;
@@ -133,6 +133,8 @@ a {
   border: 1px #87CEFA solid;
   border-radius: 3px;
   transition: 0.4s ease;
+  color: #fff;
+  background: #87CEFA
 }
 
 .page-heading {
