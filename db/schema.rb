@@ -37,7 +37,8 @@ ActiveRecord::Schema.define(version: 2020_11_28_114231) do
     t.string "title", null: false
     t.text "text", null: false
     t.text "concept", null: false
-    t.string "github"
+    t.string "appli", null: false
+    t.string "github", null: false
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -51,8 +52,8 @@ ActiveRecord::Schema.define(version: 2020_11_28_114231) do
     t.text "profile", null: false
     t.string "occupation", null: false
     t.string "study", null: false
-    t.string "sns"
-    t.string "age"
+    t.string "sns", null: false
+    t.string "age", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

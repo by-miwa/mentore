@@ -10,8 +10,8 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.text   :profile, null: false
       t.string :occupation, null: false
       t.string :study, null: false
-      t.string :sns
-      t.string :age
+      t.string :sns, null: false
+      t.string :age, null: false
 
 
       ## Recoverable

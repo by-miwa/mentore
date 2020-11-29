@@ -7,8 +7,8 @@
       <%= link_to @prototype.user.name, root_path, class: :prototype__user %>
       <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
         <div class="prototype__manage">
-          <%= link_to "編集する", root_path, class: :prototype__btn %>
-          <%= link_to "削除する", root_path, class: :prototype__btn %>
+          <%= link_to "編集する", edit_prototype_path(@prototype.id), class: :prototype__btn %>
+          <%= link_to "削除する", prototype_path(@prototype.id), method: :delete, class: :prototype__btn %>
         </div>
       <%# // プロトタイプの投稿者とログインしているユーザーが同じであれば上記を表示する %>
       <div class="prototype__image">
@@ -28,10 +28,11 @@
           </p>
         </div>
         <div class="prototype__detail">
-          <p class="detail__title">GitHub</p>
-          <p class="detail__message">
-            <%= link_to "確認する", @prototype.github %>
-          </p>
+          <p class="detail__title">ポートフォリオ</p>
+          <h1 class="detail__message">
+            <%= link_to "アプリを確認する", @prototype.appli, class: :prototype__btn %>
+            <%= link_to "GitHubを確認する", @prototype.github, class: :prototype__btn %>
+          </h1>
         </div>
       </div>
       <div class="prototype__comments">
