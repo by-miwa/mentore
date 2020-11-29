@@ -19,8 +19,9 @@
           </div>
             <div class="nav__right">
             <% if user_signed_in? %>
+              <%= link_to "プロフィール", user_path(current_user.id), class: :greeting__link%>
               <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
-              <%= link_to "New Proto", new_prototype_path, class: :nav__btn %>
+              <%= link_to "アプリ投稿", new_prototype_path, class: :nav__btn %>
             </div>
             <% else %>              
             <div class="nav__right">
