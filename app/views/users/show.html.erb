@@ -16,16 +16,16 @@
           </tr>
           <tr>
             <th class="table__col1">前職</th>
-            <td class="table__col2"><%= @user.occupation %></td>
+            <td class="table__col2"><%= @user.occupation.name %></td>
            
           </tr>
           <tr>
             <th class="table__col1">学習進捗</th>
-            <td class="table__col2"><%= @user.study %></td>
+            <td class="table__col2"><%= @user.study.name %></td>
           </tr>
           <tr>
             <th class="table__col1">年齢</th>
-            <td class="table__col2"><%= "#{@user.age}歳" %></td>
+            <td class="table__col2"><%= "#{@user.age.name}歳" %></td>
           </tr>
             <tr>
             <th class="table__col1">Twitter</th>
