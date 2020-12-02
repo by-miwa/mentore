@@ -52,7 +52,13 @@ a {
   justify-content: space-between;
 }
 .logo {
-  width: 150px;
+  width: 140px;
+}
+.photo {
+  width: 50px;
+}
+.twitter {
+  width: 25px;
 }
 .nav__btn{
   display: inline-block;
@@ -141,6 +147,21 @@ a {
   font-size: 30px;
   margin-bottom: 28px;
 }
+
+.persona__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
