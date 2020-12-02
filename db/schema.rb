@@ -60,10 +60,10 @@ ActiveRecord::Schema.define(version: 2020_11_29_054853) do
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
     t.text "profile", null: false
-    t.string "occupation", null: false
-    t.string "study", null: false
+    t.integer "occupation_id", null: false
+    t.integer "study_id", null: false
+    t.integer "age_id", null: false
     t.string "sns", null: false
-    t.string "age", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
