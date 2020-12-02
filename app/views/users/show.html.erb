@@ -27,7 +27,7 @@
             <tr>
             <th class="table__col1">Twitter</th>
            
-            <td class="table__col2"><%= link_to image_tag("twitter.png", class: :twitter), root_path %><%= link_to "Twitterを見る", @user.sns %></td>
+            <td class="table__col2"><%= link_to image_tag("twitter.png", class: :twitter), @user.sns %><%= link_to "Twitterを見る", @user.sns %></td>
           </tr>
         </tbody>
       </table>
