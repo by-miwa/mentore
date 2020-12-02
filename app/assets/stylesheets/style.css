@@ -52,14 +52,17 @@ a {
   justify-content: space-between;
 }
 .logo {
-  width: 140px;
+  width: 200px;
 }
+
 .photo {
-  width: 50px;
+  width: 70px;
 }
+
 .twitter {
   width: 25px;
 }
+
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
@@ -72,6 +75,29 @@ a {
   transition: 0.4s ease;
 }
 .nav__btn:hover{
+  color: #fff;
+  background: #87CEFA;
+}
+
+.search__btn{
+  display: inline-block;
+  padding: 0.4em 4em;
+
+}
+
+.push__btn{
+  margin: 10px;
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+.push__btn:hover{
   color: #fff;
   background: #87CEFA;
 }

@@ -19,10 +19,13 @@
           </div>
             <div class="nav__right">
             <% if user_signed_in? %>
-                  <div class="prototype__image">
-      </div>
-              <%= link_to "ログイン中", user_path(current_user.id), class: :greeting__link%>
-              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
+              <%= form_with(local: true, method: :get, class: "search-form") do |form| %>
+                <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search__btn" %>
+                <%= form.submit "検索", class: "push__btn" %>
+                <%= link_to "ログイン中", user_path(current_user.id), class: :greeting__link%>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
+              <% end %>
+
               <%= link_to "アプリ投稿", new_prototype_path, class: :nav__btn %>
               <%= link_to "面接カレンダー", new_prototype_path, class: :nav__btn %>
               <%= link_to "技術書メモ", new_prototype_path, class: :nav__btn %>
