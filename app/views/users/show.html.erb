@@ -17,18 +17,19 @@
           <tr>
             <th class="table__col1">前職</th>
             <td class="table__col2"><%= @user.occupation %></td>
+           
           </tr>
           <tr>
             <th class="table__col1">学習進捗</th>
             <td class="table__col2"><%= @user.study %></td>
           </tr>
+          <tr>
+            <th class="table__col1">年齢</th>
+            <td class="table__col2"><%= "#{@user.age}歳" %></td>
+          </tr>
             <tr>
             <th class="table__col1">Twitter</th>
             <td class="table__col2"><%= link_to "Twitterを見る", @user.sns %></td>
-          </tr>
-            <tr>
-            <th class="table__col1">年齢</th>
-            <td class="table__col2"><%= @user.age %></td>
           </tr>
         </tbody>
       </table>

@@ -3,16 +3,16 @@
 
 ## users テーブル
 
-| Column     | Type   | Options     |
-| ---------- | ------ | ----------- |
-| email      | string | null: false |
-| password   | string | null: false |
-| name       | string | null: false |
-| profile    | text   | null: false |
-| occupation | string | null: false |
-| study      | string | null: false |
-| sns        | string |             |
-| age        | string |             |
+| Column        | Type    | Options     |
+| ----------    | ------- | ----------- |
+| email         | string  | null: false |
+| password      | string  | null: false |
+| name          | string  | null: false |
+| profile       | text    | null: false |
+| occupation_id | integer | null: false |
+| study_id      | integer | null: false |
+| age_id        | integer | null: false |
+| sns           | string  |             |
 
 
 ### Association
@@ -27,7 +27,7 @@
 | title      | string     | null: false |
 | text       | text       | null: false |
 | concept    | text       | null: false |
-| github     | string     |             |
+| github     | string     | null: false |
 | user       | references | null: false, foreign_key: true |
 
 
