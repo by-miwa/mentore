@@ -4,9 +4,10 @@
  <% end %>
   <div class="card__body">
      <%= link_to  prototype.title, prototype_path(prototype.id), class: :card__title%>
+     <%= link_to  "作成者：#{prototype.user.name}", user_path(prototype.user.id), class: :artist__title %>
     <p class="card__summary">
-      <%= prototype.text %>
+      <%= prototype.genre.name %>   
     </p>
-    <%= link_to  "作成者：#{prototype.user.name}", user_path(prototype.user.id), class: :card__user %>
+    <%= prototype.concept %>
   </div>
 </div>
