@@ -36,6 +36,110 @@ a {
 
 /* ヘッダー */
 
+.title-contents {
+  width: 100vw;
+  background-image: image-url('view1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.service-title {
+  font-size: 7vh;
+}
+
+.service-explain {
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+.store-btn {
+  display: flex;
+  margin-top: 24px;
+}
+
+.apple-btn {
+  margin-right: 1vw;
+  height: 9vh;
+}
+
+.google-btn {
+  height: 9vh;
+}
+
+.select-reason-contents {
+  padding: 5vh 15vw;
+}
+
+.select-reason-contents>.title {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.select-reason-contents>.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #3ccace;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+.feature-contents>.title {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.feature-contents>.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #3ccace;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item-contents {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.item-contents>.title {
+  font-size: 3vh;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.item-contents>.subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
+}
+
 .header {
   background-color: #f1f8fe;
   margin-bottom: 48px;
@@ -46,6 +150,20 @@ a {
   width: 1024px;
   margin: 0 auto;
 }
+
+.list-pict {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.select-reason-contents {
+  padding: 5vh 15vw;
+}
+
+.reason-list-blue-text {
+  color: #3ccace;
+}
+
 .nav {
   width: 100%;
   display: flex;
@@ -65,14 +183,15 @@ a {
 
 .nav__btn{
   display: inline-block;
-  padding: 0.4em 1.6em;
-  font-size: 0.8em;
+  padding: 1em 2em;
+  font-size: 1em;
   color: #87CEFA;
   text-decoration: none;
   user-select: none;
   border: 1px #87CEFA solid;
   border-radius: 3px;
   transition: 0.4s ease;
+  font-weight: bold;
 }
 .nav__btn:hover{
   color: #fff;
