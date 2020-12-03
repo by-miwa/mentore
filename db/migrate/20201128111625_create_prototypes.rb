@@ -7,6 +7,7 @@ class CreatePrototypes < ActiveRecord::Migration[6.0]
       t.string :appli, null: false
       t.string :github, null: false     
       t.references :user, foreign_key: true
+      t.integer     :genre,  null: false           # ジャンル
       t.timestamps
     end
   end
