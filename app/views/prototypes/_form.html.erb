@@ -1,4 +1,6 @@
-<%= form_with model: prototype, local: true do |f|%>
+<%= form_with model: @prototype, local: true do |f|%>
+<%= render 'layouts/error_messages', model: f.object %>
+  
   <div class="field">
     <%= f.label :title, "アプリの名称" %><br />
     <%= f.text_field :title %>
