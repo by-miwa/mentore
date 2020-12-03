@@ -25,6 +25,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :genre, "ジャンル" %><br />
+    <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"form__text"}) %>
+  </div>
+
+  <div class="field">
     <%= f.label :image, "アプリの画像" %><br />
     <%= f.file_field :image %>
   </div>

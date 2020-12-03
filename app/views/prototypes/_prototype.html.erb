@@ -7,6 +7,6 @@
     <p class="card__summary">
       <%= prototype.text %>
     </p>
-    <%= link_to  prototype.user.name, user_path(prototype.user.id), class: :card__user %>
+    <%= link_to  "作成者：#{prototype.user.name}", user_path(prototype.user.id), class: :card__user %>
   </div>
 </div>

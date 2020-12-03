@@ -48,7 +48,7 @@ class PrototypesController < ApplicationController
 
   private
   def prototype_params
-    params.require(:prototype).permit(:title, :text, :concept, :appli, :github, :image).merge(user_id: current_user.id)
+    params.require(:prototype).permit(:title, :text, :concept, :appli, :github, :genre_id, :image).merge(user_id: current_user.id)
   end
 
   def set_prototype

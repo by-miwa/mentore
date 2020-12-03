@@ -3,6 +3,9 @@ class Prototype < ApplicationRecord
   has_one_attached :image
   has_many :comments, dependent: :destroy
 
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :genre
+
   validates :title, presence: true
   validates :text, presence: true
   validates :concept, presence: true
