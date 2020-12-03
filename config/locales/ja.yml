@@ -1,0 +1,19 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       name: ユーザー名
+       profile: プロフィール
+       occupation_id: 前職
+       study_id: 学習進捗
+       age_id: 年齢
+       sns: Twitter
+
+     prototype:
+       title: アプリの名称
+       text: 紹介文
+       concept: コンセプト
+       appli: アプリのURL
+       github: GitHub
+       genre: ジャンル
+       image: 画像

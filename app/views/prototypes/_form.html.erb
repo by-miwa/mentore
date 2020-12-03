@@ -1,4 +1,6 @@
-<%= form_with model: prototype, local: true do |f|%>
+<%= form_with model: @prototype, local: true do |f|%>
+<%= render 'layouts/error_messages', model: f.object %>
+  
   <div class="field">
     <%= f.label :title, "アプリの名称" %><br />
     <%= f.text_field :title %>
@@ -22,6 +24,11 @@
   <div class="field">
     <%= f.label :github, "GitHub" %><br />
     <%= f.text_area :github, class: :form__text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genre, "ジャンル" %><br />
+    <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"form__text"}) %>
   </div>
 
   <div class="field">

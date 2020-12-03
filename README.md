@@ -28,6 +28,7 @@
 | text       | text       | null: false |
 | concept    | text       | null: false |
 | github     | string     | null: false |
+| genre_id   | integer    | null: false |
 | user       | references | null: false, foreign_key: true |
 
 
