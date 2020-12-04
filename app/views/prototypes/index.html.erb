@@ -1,45 +1,57 @@
-    <div class='title-contents'>
-        <h2 class='service-title'>
-          集え！駆け出しエンジニア！
-        <p>
-        <%= link_to image_tag("signin.png", class: :logo), new_user_session_path %>
-        <%= link_to image_tag("signup.png", class: :logo), new_user_registration_path %>
-        </p>
-        </h2>
-        <p class='service-explain'>
-          FURIMAはだれでもかんたんに出品・購入できる
-        </p>
-        <p class='service-explain'>
-          フリマアプリです
-        </p>
-      </div>
+<div class='title-contents'>
+    <h2 class='service-title'>
+      集え！駆け出しエンジニア！
+    <p>
+    <%= link_to image_tag("signin.png", class: :logo), new_user_session_path %>
+    <%= link_to image_tag("signup.png", class: :logo), new_user_registration_path %>
+    </p>
+    </h2>
+    <p class='service-explain'>
+      FURIMAはだれでもかんたんに出品・購入できる
+    </p>
+    <p class='service-explain'>
+      フリマアプリです
+    </p>
+</div>
 
-      <div class='feature-contents'>
-        <h2 class='title'>
-          FURIMAが選ばれる3つの理由
-        </h2>
+  <div class='feature-contents'>
+    <h2 class='title'>
+      FURIMAが選ばれる3つの理由
+    </h2>
+  </div>  
 
-      <div class="persona__wrapper">
-        <%= link_to image_tag("top_img1.png", class: :logo), root_path %>
-        <%= link_to image_tag("top_img2.png", class: :logo), root_path %>
-        <%= link_to image_tag("top_img3.png", class: :logo), root_path %>
-      </div>
-      
-      <div class='feature-contents'>
-        <h2 class='title'>
-          FURIMAの特徴
-      </h2>
+  <div class="persona__wrapper">
+    <%= link_to image_tag("top_img1.png", class: :logo), root_path %>
+    <%= link_to image_tag("top_img2.png", class: :logo), root_path %>
+    <%= link_to image_tag("top_img3.png", class: :logo), root_path %>
+  </div>
+  
+  <div class='feature-contents'>
+    <h2 class='title'>
+      FURIMAの特徴
+    </h2>
+  </div>
 
-      <div class="service__wrapper">
-        <%= link_to image_tag("top_img4.png", class: :logo), new_user_registration_path %>
-        <%= link_to image_tag("top_img5.png", class: :logo), root_path %>
-        <%= link_to image_tag("top_img6.png", class: :logo), root_path %>
-        <%= link_to image_tag("top_img7.png", class: :logo), root_path %>
-        <%= link_to image_tag("top_img8.png", class: :logo), root_path %>
-      </div>
+  <div class="persona__wrapper">
+    <%= link_to image_tag("top_img4.png", class: :logo), new_user_registration_path %>
+    <%= link_to image_tag("top_img5.png", class: :logo), root_path %>
+    <%= link_to image_tag("top_img6.png", class: :logo), root_path %>
+    <%= link_to image_tag("top_img7.png", class: :logo), root_path %>
+    <%= link_to image_tag("top_img8.png", class: :logo), root_path %>
+  </div>
 
-      <div class='feature-contents'>
-        <h2 class='title'>ポートフォリオ</h2>
+  <div class='feature-contents'>
+    <h2 class='title'>ポートフォリオ</h2>
+  </div>  
 
-      <div class="card__wrapper">
-        <%= render partial: 'prototype', collection: @prototypes %>
+  <div class="card__wrapper">
+    <%= render partial: 'prototype', collection: @prototypes %>
+  </div>  
+
+    <div class='feature-contents'>
+    <h2 class='title'>ITエンジニア本</h2>
+  </div>  
+
+  <div class="card__wrapper">
+    <%= render partial: 'books/book', collection: @books %>
+  </div>  

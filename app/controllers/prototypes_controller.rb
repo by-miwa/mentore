@@ -5,6 +5,7 @@ class PrototypesController < ApplicationController
 
   def index
     @prototypes = Prototype.all
+    @books = Book.all
   end
 
   def new
