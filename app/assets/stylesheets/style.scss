@@ -80,6 +80,7 @@ a {
   text-align: center;
   font-size: 3.5vh;
   font-weight: bold;
+  margin-top: 10vh;
   margin-bottom: 5vh;
   position: relative;
 }
@@ -308,7 +309,7 @@ a {
 .persona__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
