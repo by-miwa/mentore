@@ -1,0 +1,43 @@
+<%= form_with model: @book, local: true do |f|%>
+<%= render 'layouts/error_messages', model: f.object %>
+  
+  <div class="field">
+    <%= f.label :title, "本のタイトル" %><span class="indispensable">必須</span><br />
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genre, "ジャンル" %><span class="indispensable">必須</span><br />
+    <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"form__text"}) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :understand, "学んだ単語" %><span class="indispensable">必須</span><br />
+    <%= f.text_area :understand, class: :form__text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :text, "本の感想" %><span class="indispensable">必須</span><br />
+    <%= f.text_area :text, class: :form__text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :action, "行動プラン" %><span class="indispensable">必須</span><br />
+    <%= f.text_area :action, class: :form__text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :link, "本のURL" %><span class="indispensable">必須</span><br />
+    <%= f.text_area :link, class: :form__text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "アプリの画像" %><span class="indispensable">必須</span><br />
+    <%= f.file_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+  <%=link_to 'もどる', root_path, class:"back-btn" %>
+<% end %>
