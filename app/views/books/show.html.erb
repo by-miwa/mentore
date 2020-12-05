@@ -1,0 +1,48 @@
+<main class="main">
+  <div class="inner">
+    <div class="prototype__wrapper">
+      <p class="prototype__hedding">
+        <%= @book.title %>
+      </p>
+      <p class="genre__hedding">
+        <%= @book.text %>
+      </p>
+      
+      <%= link_to "作成者：#{@book.user.name}", user_path(@book.user), class: :prototype__user %>
+      <% if user_signed_in? && current_user.id == @book.user_id %>
+        <div class="prototype__manage">
+          <%= link_to "編集する", edit_book_path(@book.id), class: :prototype__btn %>
+          <%= link_to "削除する", book_path(@book.id), method: :delete, class: :prototype__btn %>
+        </div>
+      <% end %>  
+      
+      <div class="prototype__image">
+        <%= image_tag @book.image %>
+      </div>
+      <div class="prototype__body">
+        <div class="prototype__detail">
+          <p class="detail__title">ジャンル</p>
+          <p class="detail__message">
+            <%= @book.reed %>
+          </p>
+        </div>
+        <div class="prototype__detail">
+          <p class="detail__title">学んだ単語</p>
+          <p class="detail__message">
+            <%= @book.understand %>
+          </p>
+        </div>
+        <div class="prototype__detail">
+          <p class="detail__title">本のURL</p>
+          <h1 class="detail__message">
+            <%= link_to "本を確認する", @book.link, class: :prototype__btn %>
+          </h1>
+        </div>
+      </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</main>

@@ -17,6 +17,30 @@ class BooksController < ApplicationController
     end    
   end
 
+  def show
+    @book = Book.find(params[:id])
+  end
+
+  def edit
+    @book = Book.find(params[:id])
+  end
+
+  def update
+    @book = Book.find(params[:id])
+    if @book.update(book_params)
+    redirect_to book_path  
+    else
+    render :edit
+    end
+  end
+
+  def destroy
+    @book = Book.find(params[:id])
+    if @book.destroy
+    redirect_to root_path
+    end
+  end
+
   private
   def book_params
     params.require(:book).permit(:title, :reed, :understand, :text, :action, :link, :image).merge(user_id: current_user.id)
