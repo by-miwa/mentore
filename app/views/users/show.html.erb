@@ -1,15 +1,16 @@
 <div class="main">
   <div class="inner">
     <div class="user__wrapper">
-    
-      <h2 class="page-heading">
+          <h2 class="page-heading">
+      
       <% if user_signed_in? && current_user.id %>
         <div class="prototype__manage">
-          <%= link_to "編集する", edit_user_path(@user.id), class: :prototype__btn %>
+         
         </div>
       <% end %>
         <%= @user.name %>
         <%= image_tag("twitter.png", class: :photo) %>
+        <%= link_to "ユーザーの編集をする", edit_user_path(@user.id), class: :prototype__btn %> 
       </h2>
       <table class="table">
         <tbody>
