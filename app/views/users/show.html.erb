@@ -10,7 +10,8 @@
       <% end %>
         <%= @user.name %>
         <%= image_tag("twitter.png", class: :photo) %>
-        <%= link_to "ユーザーの編集をする", edit_user_path(@user.id), class: :prototype__btn %> 
+        <%= link_to "ユーザー編集をする", edit_user_path(@user.id), class: :prototype__btn %> 
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:  :prototype__btn %>
       </h2>
       <table class="table">
         <tbody>
