@@ -10,6 +10,28 @@ class ApplicationController < ActionController::Base
     @results = @p.result.includes(:genre)  # 検索条件にマッチした商品の情報を取得
   end
   
+  def new_guest
+    user = User.find_or_create_by!(email: 'yamada@com') do |user|
+    user = User.find_or_create_by!(name: 'yamada') do |user|
+    user = User.find_or_create_by!(profile: 'よろしくお願い致します。') do |user|
+    user = User.find_or_create_by!(occupation_id: '2') do |user|
+    user = User.find_or_create_by!(study_id: '2') do |user|
+    user = User.find_or_create_by!(age_id: '2') do |user|
+    user = User.find_or_create_by!(sns: 'あ') do |user|
+      user.password = SecureRandom.urlsafe_base64
+      # user.confirmed_at = Time.now  # Confirmable を使用している場合は必要
+    end
+    end
+    end
+    end
+    end
+    end
+    end
+
+    sign_in user
+    redirect_to root_path, notice: 'ゲストユーザーとしてログインしました。'
+  end
+
   private
 
   def search_prototype

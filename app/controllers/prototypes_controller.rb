@@ -2,10 +2,15 @@ class PrototypesController < ApplicationController
   before_action :set_prototype, except: [:index, :new, :create]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
+  before_action :search_prototype, only: [:new, :index, :search]
 
   def index
     @prototypes = Prototype.all
     @books = Book.all
+  end
+
+  def search
+    @results = @p.result.includes(:genre)  # 検索条件にマッチした商品の情報を取得
   end
 
   def new
@@ -25,6 +30,7 @@ class PrototypesController < ApplicationController
     @prototype = Prototype.find(params[:id])
     @comment = Comment.new
     @comments = @prototype.comments.includes(:user)
+    before_action :search_prototype, only: [:index, :search]
   end
 
   def edit
@@ -45,6 +51,12 @@ class PrototypesController < ApplicationController
     if @prototype.destroy
     redirect_to root_path
     end
+  end
+
+  private
+
+  def search_prototype
+    @p = Prototype.ransack(params[:q])  # 検索オブジェクトを生成
   end
 
   private
