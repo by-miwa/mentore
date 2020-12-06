@@ -47,16 +47,19 @@ a {
   align-items: flex-start;
   justify-content: center;
   padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  color: #383941;
 }
 
 .service-title {
-  font-size: 7vh;
+  font-size: 5.5vh;
 }
 
 .service-explain {
-  font-size: 3vh;
+  font-size: 2.5vh;
+}
+
+.text-explain {
+  font-size: 2vh;
 }
 
 .store-btn {
@@ -142,6 +145,7 @@ a {
 
 .logo {
   width: 100px;
+  margin: 30px;
 }
 
 .photo {
@@ -371,7 +375,14 @@ a {
 }
 
 .persona__wrapper {
-  margin-left: 40vw;
+  margin-left: 38vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.personan__wrapper {
+  margin-left: 35vw;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -549,7 +560,7 @@ a {
 .copyright {
   text-align: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 30px;
 }
 
 /* タブレット対応 */
@@ -599,7 +610,7 @@ a {
 .footer {
   width: 100vw;
   height: 10vw;
-  background-image: image-url('view1.jpg');
+  background-image: image-url('view2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -610,10 +621,9 @@ a {
   padding: 5vh 15vw;
   margin-top: 50px;
   color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 .copyright {
   text-align: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
 }
