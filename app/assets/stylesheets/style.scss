@@ -56,8 +56,7 @@ a {
 }
 
 .service-explain {
-  font-size: 7vh;
-  line-height: 40px;
+  font-size: 4vh;
 }
 
 .store-btn {
@@ -136,8 +135,13 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+.icon {
+  width: 150px;
+}
+
 .logo {
-  width: 200px;
+  width: 100px;
 }
 
 .photo {
@@ -344,7 +348,7 @@ a {
 }
 
 .persona__wrapper {
-  margin-left: 30vw;
+  margin-left: 40vw;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
