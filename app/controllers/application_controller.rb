@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
     end
     end
     sign_in user
-    redirect_to root_path, notice: 'ゲストユーザーとしてログインしました。'
+    redirect_to root_path, notice: 'ゲストログインしました。'
   end
 
   private
