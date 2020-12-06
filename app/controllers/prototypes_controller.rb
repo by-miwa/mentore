@@ -2,7 +2,7 @@ class PrototypesController < ApplicationController
   before_action :set_prototype, except: [:index, :new, :create]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
-  before_action :search_prototype, only: [:new, :index, :search]
+  #before_action :search_prototype, only: [:new, :index, :search]
 
   def index
     @prototypes = Prototype.all
@@ -30,7 +30,7 @@ class PrototypesController < ApplicationController
     @prototype = Prototype.find(params[:id])
     @comment = Comment.new
     @comments = @prototype.comments.includes(:user)
-    before_action :search_prototype, only: [:index, :search]
+    #before_action :search_prototype, only: [:index, :search]
   end
 
   def edit
@@ -56,7 +56,7 @@ class PrototypesController < ApplicationController
   private
 
   def search_prototype
-    @p = Prototype.ransack(params[:q])  # 検索オブジェクトを生成
+    #@p = Prototype.ransack(params[:q])  # 検索オブジェクトを生成
   end
 
   private
@@ -65,7 +65,7 @@ class PrototypesController < ApplicationController
   end
 
   def set_prototype
-    #@prototype = Prototype.find(params[:id])
+    @prototype = Prototype.find(params[:id])
   end
 
   def contributor_confirmation
