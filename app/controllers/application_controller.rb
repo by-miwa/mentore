@@ -18,8 +18,7 @@ class ApplicationController < ActionController::Base
     user = User.find_or_create_by!(study_id: '2') do |user|
     user = User.find_or_create_by!(age_id: '2') do |user|
     user = User.find_or_create_by!(sns: 'あ') do |user|
-      user.password = SecureRandom.urlsafe_base64
-      # user.confirmed_at = Time.now  # Confirmable を使用している場合は必要
+    user.password = SecureRandom.urlsafe_base64
     end
     end
     end
@@ -27,7 +26,6 @@ class ApplicationController < ActionController::Base
     end
     end
     end
-
     sign_in user
     redirect_to root_path, notice: 'ゲストユーザーとしてログインしました。'
   end

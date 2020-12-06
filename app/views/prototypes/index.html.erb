@@ -2,9 +2,8 @@
     <h2 class='service-title'>
       集え！駆け出しエンジニア！
     <p>
-    <%= link_to image_tag("signin.png", class: :logo), new_user_session_path %>
+    <%= link_to image_tag("signin.png", class: :logo),  application_guest_sign_in_path, method: :post %>
     <%= link_to image_tag("signup.png", class: :logo), new_user_registration_path %>
-    <%= link_to 'ゲストログイン（閲覧用）',  application_guest_sign_in_path, method: :post, class: :nav__btn %>
     </p>
     </h2>
     <p class='service-explain'>
