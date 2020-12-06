@@ -10,7 +10,7 @@ class PrototypesController < ApplicationController
   end
 
   def search
-    @results = @p.result.includes(:genre)  # 検索条件にマッチした商品の情報を取得
+    @results = @p.result # 検索条件にマッチした商品の情報を取得
   end
 
   def new
@@ -65,7 +65,7 @@ class PrototypesController < ApplicationController
   end
 
   def set_prototype
-    @prototype = Prototype.find(params[:id])
+    #@prototype = Prototype.find(params[:id])
   end
 
   def contributor_confirmation
