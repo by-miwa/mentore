@@ -1,10 +1,20 @@
+<h2 class="interview-heading">面接カレンダー<%= image_tag("top_img5.png", class: :top) %></h2>
+    <p class='interview-explain'>
+      お互いに緊張感が持てる、面接練習したい相手を募集しよう！
+    </p>
+
 <%= form_with model: @plan, url: calendars_path, class: 'form' do |f| %>
+
     <%= f.label :日付を選択, class: 'lavel' %>
     <%= f.date_field :date, class: 'date-select' %>
     <%= f.label :お名前と時間を入力, class: 'lavel' %>
     <%= f.text_field :plan, class: 'text-input' %>
     <%= f.submit '保存' %>
   <% end %>
+
+    <p class='interview-explain'><%= image_tag("step1.png", class: :step) %>ライバルのポートフォリオとGitHubを見れる</p>
+    <p class='interview-explain'><%= image_tag("step2.png", class: :step) %>お互いに緊張感が持てる、面接練習したい相手を募集する</p>
+    <p class='interview-explain'><%= image_tag("step3.png", class: :step) %>最近、読んだ技術書やビジネス書の感想を投稿できる！</p>
 
   <div class=calendar>
     <% @week_days.each do |day| %>
