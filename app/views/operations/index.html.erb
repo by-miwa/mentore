@@ -35,25 +35,9 @@
     <%= link_to image_tag("top_img4.png", class: :logo), new_prototype_path %>
     <%= link_to image_tag("top_img5.png", class: :logo), calendars_path %>
     <%= link_to image_tag("top_img6.png", class: :logo), new_book_path %>
-    <%= link_to image_tag("top_img7.png", class: :logo), operations_path %>
+    <%= link_to image_tag("top_img7.png", class: :logo), root_path %>
     <p class='text-explain'>・ ライバルのポートフォリオとGitHubを見れる</p>
     <p class='text-explain'>・ お互いに緊張感を持てる、面接練習したい相手を募集する</p>
     <p class='text-explain'>・ 最近、読んだ技術書やビジネス書の感想を投稿できる！</p>
     <p class='text-explain'>・ 本番を想定した企業の採用担当者さんと面接練習をしてもらえる</p>
   </div>
-
-  <div class='work-contents'>
-    <h2 class='title'>ポートフォリオ</h2>
-  </div>  
-
-  <div class="card__wrapper">
-    <%= render partial: 'prototype', collection: @prototypes %>
-  </div>  
-
-    <div class='work-contents'>
-    <h2 class='title'>ITエンジニア本</h2>
-  </div>  
-
-  <div class="card__wrapper">
-    <%= render partial: 'books/book', collection: @books %>
-  </div>  
