@@ -9,7 +9,7 @@
         </div>
       <% end %>
         <%= @user.name %>
-        <%= image_tag("face.png", class: :photo) %>
+        <%= image_tag("face.png", class: :top) %>
         <%= link_to "ユーザー編集をする", edit_user_path(@user.id), class: :prototype__btn %> 
         <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:  :prototype__btn %>
       </h2>
