@@ -37,6 +37,24 @@
 - belongs_to :users
 - has_many :comments
 
+
+## books テーブル
+
+| Column     | Type       | Options     |
+| ---------- | ---------- | ----------- |
+| title      | string     | null: false |
+| reed       | integer    | null: false |
+| understand | text       | null: false |
+| text       | text       | null: false |
+| action     | text       | null: false |
+| link       | text       | null: false |
+| user       | references | null: false, foreign_key: true |
+
+
+### Association
+
+- belongs_to :users
+
 ## comments テーブル
 
 | Column    | Type       | Options                        |
