@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'book/index'
   devise_for :users
   root to: "prototypes#index"
+  post '/application/guest_sign_in', to: 'application#new_guest'
+  get 'prototypes/search'
+  get 'prototypes/search'
   resources :books 
   resources :users
   resources :prototypes do

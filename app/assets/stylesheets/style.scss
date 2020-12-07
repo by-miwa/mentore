@@ -47,17 +47,19 @@ a {
   align-items: flex-start;
   justify-content: center;
   padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  color: #383941;
 }
 
 .service-title {
-  font-size: 7vh;
+  font-size: 5.5vh;
 }
 
 .service-explain {
   font-size: 2.5vh;
-  line-height: 40px;
+}
+
+.text-explain {
+  font-size: 2vh;
 }
 
 .store-btn {
@@ -74,18 +76,37 @@ a {
   height: 9vh;
 }
 
-
-
 .feature-contents>.title {
   text-align: center;
   font-size: 3.5vh;
   font-weight: bold;
-  margin-top: 10vh;
+  margin-top: 5vh;
   margin-bottom: 5vh;
   position: relative;
 }
 
 .feature-contents>.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #3ccace;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.work-contents>.title {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  position: relative;
+}
+
+.work-contents>.title::after {
   content: '';
   width: 70px;
   height: 4px;
@@ -117,16 +138,60 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.logo {
-  width: 200px;
+
+.icon {
+  width: 150px;
 }
 
-.photo {
-  width: 70px;
+.logo {
+  width: 100px;
+  margin: 70px;
+}
+
+.top {
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .twitter {
   width: 25px;
+}
+
+.user {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.guest__btn{
+  display: inline-block;
+  padding: 1em 2em;
+  font-size: 1em;
+  color: #fff;
+  background: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  font-weight: bold;
+}
+
+.login__btn{
+  display: inline-block;
+  padding: 1em 2em;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  font-weight: bold;
+}
+.nav__btn:hover{
+  color: #fff;
+  background: #87CEFA;
 }
 
 .nav__btn{
@@ -307,7 +372,14 @@ a {
 }
 
 .persona__wrapper {
-  display: flex;
+  margin-left: 30vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.personan__wrapper {
+  margin-left: 25vw;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
@@ -323,9 +395,8 @@ a {
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  min-height: calc(100vh - 161px);
 }
 .card {
   width: 30vh;
@@ -333,7 +404,6 @@ a {
   margin-left: 100px;
   margin-top: 50px;
   margin-bottom: 50px;
-  
 }
 .card__img {
   margin-bottom: 16px;
@@ -487,7 +557,7 @@ a {
 .copyright {
   text-align: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 30px;
 }
 
 /* タブレット対応 */
@@ -537,7 +607,7 @@ a {
 .footer {
   width: 100vw;
   height: 10vw;
-  background-image: image-url('view1.jpg');
+  background-image: image-url('view2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -548,10 +618,9 @@ a {
   padding: 5vh 15vw;
   margin-top: 50px;
   color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 .copyright {
   text-align: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
 }

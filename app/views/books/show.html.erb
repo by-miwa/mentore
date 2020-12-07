@@ -2,13 +2,14 @@
   <div class="inner">
     <div class="prototype__wrapper">
       <p class="prototype__hedding">
+      <%= image_tag("top_img6.png", class: :top) %>
         <%= @book.title %>
       </p>
       <p class="genre__hedding">
         <%= @book.text %>
       </p>
       
-      <%= link_to "作成者：#{@book.user.name}", user_path(@book.user), class: :prototype__user %>
+      <%= link_to "投稿者：#{@book.user.name}", user_path(@book.user), class: :prototype__user %>
       <% if user_signed_in? && current_user.id == @book.user_id %>
         <div class="prototype__manage">
           <%= link_to "編集する", edit_book_path(@book.id), class: :prototype__btn %>
