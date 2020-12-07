@@ -36,6 +36,7 @@ group :development, :test do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
+  gem 'rspec-rails', '~> 4.0.0'
 end
 
 group :development do
@@ -69,3 +70,4 @@ end
 gem 'active_hash'
 gem 'rails-i18n'
 gem 'ransack'
+gem 'factory_bot_rails'
