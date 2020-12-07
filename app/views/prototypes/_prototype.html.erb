@@ -6,7 +6,7 @@
      <%= link_to  prototype.title, prototype_path(prototype.id), class: :card__title%>
      <%= link_to  "作成者：#{prototype.user.name}", user_path(prototype.user.id), class: :artist__title %>
     <p class="card__summary">
-      <%= prototype.genre.name %>   
+  
     </p>
     <%= prototype.concept %>
   </div>

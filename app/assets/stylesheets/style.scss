@@ -50,6 +50,20 @@ a {
   color: #383941;
 }
 
+.operations-contents {
+  width: 100vw;
+  background-image: image-url('view3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #383941;
+}
+
 .service-title {
   font-size: 5.5vh;
 }
@@ -58,8 +72,15 @@ a {
   font-size: 2.5vh;
 }
 
+.interview-explain {
+  font-size: 2vh;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
 .text-explain {
   font-size: 2vh;
+  margin-bottom: 5px;
 }
 
 .store-btn {
@@ -154,6 +175,18 @@ a {
   margin-top: 10px;
 }
 
+.step {
+  width: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.stepup {
+  width: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 7px;
+}
 .twitter {
   width: 25px;
 }
@@ -369,6 +402,11 @@ a {
 .page-heading {
   font-size: 30px;
   margin-bottom: 28px;
+}
+
+.interview-heading {
+  font-size: 30px;
+  margin-left: 50px;
 }
 
 .persona__wrapper {
