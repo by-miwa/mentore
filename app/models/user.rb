@@ -24,6 +24,11 @@ class User < ApplicationRecord
     validates :study_id, numericality: { other_than: 1 }
     validates :age_id, numericality: { other_than: 1 }
 
+    VALID_YOUTUBE_URL = /(\Ahttps:\/\/www\.youtube\.com\/watch\?v=)+[\w]{11}\z/
+    validates :youtube_url, format: { with: VALID_YOUTUBE_URL }
+    「https://www.youtube.com/watch?v=」
+      https://twitter.com/by_miwa30
+
     has_many :prototypes
     has_many :comments
     has_many :books
