@@ -1,9 +1,13 @@
 class CalendarsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
+  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   # １週間のカレンダーと予定が表示されるページ
   def index
     get_week
     @plan = Plan.new
+    @users = User.all
   end
 
   # 予定の保存
@@ -36,6 +40,10 @@ class CalendarsController < ApplicationController
       end
       days = { month: (@todays_date + x).month, date: (@todays_date+x).day, plans: today_plans, wday: wdays[(@todays_date+x).wday]}
       @week_days.push(days)
+    end
+
+    def contributor_confirmation
+      redirect_to root_path unless current_user == @user
     end
 
   end

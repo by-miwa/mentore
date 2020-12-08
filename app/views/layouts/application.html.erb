@@ -24,7 +24,8 @@
               <%= form_with(local: true, method: :get, class: "search-form") do |form| %>
                 <%= form.text_field :keyword, placeholder: "面接相手を検索する", class: "search__btn" %>
                 <%= form.submit "検索", class: "push__btn" %>
-                <%= link_to image_tag("face.png", class: :user), user_path(current_user.id) %> 
+                <%= link_to image_tag("face.png", class: :user), user_path(current_user.id) %>
+                <%= link_to current_user.name, user_path(current_user.id), class: :greeting__link%> 
             <% end %>
 
               <%= link_to "アプリ投稿", new_prototype_path, class: :nav__btn %>

@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
+  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
+
   def show
     @user = User.find(params[:id])
     @prototypes = @user.prototypes.includes(:user)
@@ -15,6 +19,10 @@ class UsersController < ApplicationController
     else
     render :edit
     end
+  end
+  
+  def contributor_confirmation
+    redirect_to root_path unless current_user == @user
   end
 
   private

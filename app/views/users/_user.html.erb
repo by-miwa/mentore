@@ -1,0 +1,16 @@
+<table class="table">
+  <tbody>
+    <tr>
+      <th class="table__col1">お名前</th>
+      <td class="table__col2"><%= link_to  user.name, user_path(user.id), class: :artist__title %></td>
+    </tr>
+    <tr>
+      <th class="table__col1">年齢</th>
+      <td class="table__col2"><%= "#{user.age.name}歳" %></td>
+    </tr>
+      <tr>
+      <th class="table__col1">Twitter</th>
+      <td class="table__col2"><%= link_to image_tag("twitter.png", class: :twitter), user.sns %><%= link_to "Twitterを見る", user.sns, class: :under %></td>
+    </tr>
+  </tbody>
+</table>
