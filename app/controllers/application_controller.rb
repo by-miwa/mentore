@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
-  before_action :search_prototype
 
   def index
     @prototypes = Prototypes.all  # 全商品の情報を取得
