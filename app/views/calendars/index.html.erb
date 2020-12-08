@@ -9,14 +9,14 @@
     <%= f.date_field :date, class: 'date-select' %>
     <%= f.label :お名前と時間を入力, class: 'lavel' %>
     <%= f.text_field :plan, class: 'text-input' %>
-    <%= f.submit '保存' %>
+    <%= f.submit 'カレンダーに保存' %>
   <% end %>
 
 
   
-    <p class='interview-explain'><%= image_tag("step1.png", class: :step) %>ライバルのポートフォリオとGitHubを見れる</p>
-    <p class='interview-explain'><%= image_tag("step2.png", class: :step) %>お互いに緊張感が持てる、面接練習したい相手を募集する</p>
-    <p class='interview-explain'><%= image_tag("step3.png", class: :step) %>最近、読んだ技術書やビジネス書の感想を投稿できる！</p>
+    <p class='interview-explain'><%= image_tag("step1.png", class: :step) %>日付、お名前、時間を指定して面接相手を募集しよう！</p>
+    <p class='interview-explain'><%= image_tag("step2.png", class: :step) %>面接カレンダーをみて都合が良ければ、積極的に面接相手を引き受けよう！</p>
+    <p class='interview-explain'><%= image_tag("step3.png", class: :step) %>ユーザーリストからTwitterで面接相手と繋がりZoomで面接しましょう！</p>
 
   <div class=calendar>
     <% @week_days.each do |day| %>
