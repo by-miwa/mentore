@@ -14,6 +14,8 @@ class Prototype < ApplicationRecord
   validates :genre_id, numericality: { other_than: 1 }
   validates :image, presence: true, unless: :was_attached?
 
+  validates :github, format: { with: /github.com/}
+
   def was_attached?
     self.image.attached?
   end

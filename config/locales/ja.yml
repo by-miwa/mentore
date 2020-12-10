@@ -20,9 +20,9 @@ ja:
     
      book:
        title: 本のタイトル
-       reed: ジャンル
+       reed: 本の種類
        understand: 学んだ単語
        text: 本の感想
        action: 行動プラン
-       link: 本のURL
+       link: KindleのURL
        image: 画像

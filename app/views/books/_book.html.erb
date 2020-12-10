@@ -6,7 +6,7 @@
      <%= link_to  book.title, book_path(book.id), class: :card__title%>
      <%= link_to  "投稿者：#{book.user.name}", user_path(book.user.id), class: :artist__title %>
     <p class="card__summary">
-      <%= book.title %>   
+      <%= book.understand %>   
     </p>
   </div>
 </div>

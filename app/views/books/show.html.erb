@@ -5,9 +5,6 @@
       <%= image_tag("top_img6.png", class: :top) %>
         <%= @book.title %>
       </p>
-      <p class="genre__hedding">
-        <%= @book.text %>
-      </p>
       
       <%= link_to "投稿者：#{@book.user.name}", user_path(@book.user), class: :prototype__user %>
       <% if user_signed_in? && current_user.id == @book.user_id %>
@@ -20,13 +17,6 @@
       <div class="prototype__image">
         <%= image_tag @book.image %>
       </div>
-      <div class="prototype__body">
-        <div class="prototype__detail">
-          <p class="detail__title">ジャンル</p>
-          <p class="detail__message">
-            <%= @book.reed %>
-          </p>
-        </div>
         <div class="prototype__detail">
           <p class="detail__title">学んだ単語</p>
           <p class="detail__message">
@@ -34,9 +24,15 @@
           </p>
         </div>
         <div class="prototype__detail">
-          <p class="detail__title">本のURL</p>
+          <p class="detail__title">本の感想</p>
+          <p class="detail__message">
+            <%= @book.text %>
+          </p>
+        </div>
+        <div class="prototype__detail">
+          <p class="detail__title"></p>
           <h1 class="detail__message">
-            <%= link_to "本を確認する", @book.link, class: :prototype__btn %>
+            <%= link_to "Kindleで確認する", @book.link, class: :prototype__btn %>
           </h1>
         </div>
       </div>
