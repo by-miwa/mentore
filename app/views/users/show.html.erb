@@ -40,10 +40,16 @@
         </tbody>
       </table>
       <h2 class="page-heading">
-        <%= "ポートフォリオ一覧" %>
+        <%= "ポートフォリオ" %>
       </h2>
       <div class="user__card">
         <%= render partial: '/prototypes/prototype', collection: @prototypes %>
+      </div>
+      <h2 class="page-heading">
+        <%= "読んだ本" %>
+      </h2>
+      <div class="user__card">
+        <%= render partial: 'books/book', collection: @books %>
       </div>
     </div>
   </div>

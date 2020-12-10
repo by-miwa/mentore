@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @prototypes = @user.prototypes.includes(:user)
+    @books = @user.books.includes(:user)
   end
 
   def edit
