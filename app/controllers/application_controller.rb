@@ -2,8 +2,8 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   def new_guest
-    user = User.find_or_create_by!(email: 'guest@test2.com') do |user|
-      user.password = "test12345"
+    user = User.find_or_create_by!(email: 'guest@com') do |user|
+      user.password = "guest123"
       user.name = 'guest'
       user.profile = 'よろしくお願い致します'
       user.occupation_id = '2'
