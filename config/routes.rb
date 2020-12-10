@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: "prototypes#index"
   resources :calendars
   resources :operations
-  #post '/application/guest_sign_in', to: 'application#new_guest'
+  post '/application/guest_sign_in', to: 'application#new_guest'
   get 'prototypes/search'
   get 'prototypes/search'
   resources :books 

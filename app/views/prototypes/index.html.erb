@@ -6,7 +6,7 @@
       Mentoreはエンジニア転職を目指す
     </p>
     <p class='service-explain'>
-      仲間を増やせるマッチングアプリです！
+      仲間を増やせるマッチングアプリです！<%= link_to 'ゲストログイン（閲覧用）',  application_guest_sign_in_path, method: :post, class: :guest__btn %>
     </p>
 </div>
 
@@ -36,7 +36,7 @@
     <%= link_to image_tag("top_img5.png", class: :logo), calendars_path %>
     <%= link_to image_tag("top_img6.png", class: :logo), new_book_path %>
     <%= link_to image_tag("top_img7.png", class: :logo), operations_path %>
-    <p class='text-explain'><%= image_tag("point4.png", class: :stepup) %>ライバルのポートフォリオとGitHubを見れる</p>
+    <p class='text-explain'><%= image_tag("point4.png", class: :stepup) %>初学者のポートフォリオとGitHubを見れる</p>
     <p class='text-explain'><%= image_tag("point4.png", class: :stepup) %>お互いに緊張感が持てる、面接練習したい相手を募集する</p>
     <p class='text-explain'><%= image_tag("point4.png", class: :stepup) %>最近、読んだ技術書やビジネス書の感想を投稿できる！</p>
     <p class='text-explain'><%= image_tag("point4.png", class: :stepup) %>転職サポートプラン（有料）では専任エージェントによるサポートを受けられます！</p>
