@@ -128,7 +128,7 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 ### 【データベース】
 ・MySQL2
 
-#### 【開発環境】
+### 【開発環境】
 ・Docker, docker-compose
 
 ### 【本番環境】
@@ -319,8 +319,8 @@ AWS(ACM,EC2,ALB,ECR,ECS,RDS,Route53,VPC,S3)
 About me
 現在、22歳で某独立行政法人に勤務しております。バックエンドエンジニアを目指しポートフォリオの作成・改善、アウトプットを行っております。
 
-Twitter
-Qiita
-学習記録
+- Twitter
+- Qiita
+- 学習記録
 
 
