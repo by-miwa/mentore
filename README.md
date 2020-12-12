@@ -4,7 +4,7 @@
 **ログイン方法**
 
 🌐 URL
-https://doboku-post.site  <br>「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 で新規登録なしでログインできます。<br>
+http://3.140.60.122/ <br>「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 で新規登録なしでログインできます。<br>
 email: guest@com<br>  password: guest123<br>
 ![代替テキスト](https://vps15-d.kuku.lu/files/20201212-0748_b88f34fcccf502e00a8bbe6172b3721b.png)
 
