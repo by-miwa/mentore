@@ -214,7 +214,7 @@ Bookシェア投稿機能・編集・削除（画像, タイトル, メッセー
 - belongs_to :users
 - belongs_to :prototype
 
-# :pushpin:About me
+# :high_brightness:About me
 現在、23歳でエンジニア転職を目指しております。<br>バックエンドエンジニアを目指しポートフォリオの作成・改善、アウトプットを行っております。
 
 - **[Twitter](https://twitter.com/by_miwa30)**
