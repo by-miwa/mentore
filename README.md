@@ -3,8 +3,8 @@
 「駆け出しエンジニア同士で繋がろう！」  <br>Mentoreはエンジニア転職を目指す仲間を増やせるマッチングアプリです！<br><br>
 **ログイン方法**
 
-### 🌐 URL http://3.140.60.122/ <br>「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 で新規登録なしでログインできます。<br>
-email: guest@com<br>  password: guest123<br>
+### 🌐 URL http://3.140.60.122/ <br>「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 でログインできます。<br>
+**email: guest@com**<br>  **password: guest123**<br>
 ![テキスト](https://vps15-d.kuku.lu/files/20201212-1010_30d1e6304ea134e0d89a4c934f7a9f05.png)
 
 # :mag_right: なぜこのサービスを作ったか:question:
