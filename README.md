@@ -1,11 +1,11 @@
 # MEN TORE（メントレ）:bust_in_silhouette::speech_balloon:
 
-「駆け出しエンジニア同士で繋がろう！」  <br>Mentoreはエンジニア転職を目指す仲間を増やせるマッチングアプリです！
+「駆け出しエンジニア同士で繋がろう！」  <br>Mentoreはエンジニア転職を目指す仲間を増やせるマッチングアプリです！<br>
 **ログイン方法**
 
 🌐 URL
 https://doboku-post.site  <br>「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 で新規登録なしでログインできます。<br>
-　email: guest@com<br>password: guest123
+email: guest@com<br>  password: guest123
 
 イメージ図
 スクリーンショット 2020-10-28 0 27 14
