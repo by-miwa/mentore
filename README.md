@@ -106,29 +106,29 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 
 # :computer::sparkles:使用技術・環境
 ### 【フロントエンド】
-・HTML
-・CSS
-・JavaScript
+・HTML<br>
+・CSS<br>
+・JavaScript<br>
 
 ### 【バックエンド】
-・Ruby 2.5.1
-・Ruby on Rails 5.2.4
+・Ruby 2.5.1<br>
+・Ruby on Rails 5.2.4<br>
 
 ### 【データベース】
-・MySQL2
+・MySQL2<br>
 
 ### 【開発環境】
 ・
 
 ### 【本番環境】
-・AWS(S3/EC2)
-・Nginx、Unicorn
-・Capistrano
+・AWS(S3/EC2)<br>
+・Nginx、Unicorn<br>
+・Capistrano<br>
 
 ### 【その他使用技術】
-・Git,GitHub
-・RSpec
-・Rubocop
+・Git,GitHub<br>
+・RSpec<br>
+・Rubocop<br>
 
 
 # 機能一覧
