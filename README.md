@@ -158,7 +158,7 @@ Bookシェア投稿機能・編集・削除（画像, タイトル, メッセー
 | occupation_id | integer | null: false |
 | study_id      | integer | null: false |
 | age_id        | integer | null: false |
-| sns           | string  |             |
+| sns           | string  | null: false |
 
 
 ### Association
@@ -192,7 +192,7 @@ Bookシェア投稿機能・編集・削除（画像, タイトル, メッセー
 | reed       | integer    | null: false |
 | understand | text       | null: false |
 | text       | text       | null: false |
-| action     | text       | null: false |
+| action     | text       |             |
 | link       | text       | null: false |
 | user       | references | null: false, foreign_key: true |
 
