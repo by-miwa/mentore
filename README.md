@@ -1,12 +1,12 @@
 # MEN TORE（メントレ）:bust_in_silhouette::speech_balloon:
 
-「駆け出しエンジニア同士で繋がろう！」  GolfOurは練習内容を投稿して共有したり記録できるゴルフ初心者向けサービスです
+「駆け出しエンジニア同士で繋がろう！」  <br>GolfOurは練習内容を投稿して共有したり記録できるゴルフ初心者向けサービスです
 
 **ログイン方法**
 
 🌐 URL
-https://doboku-post.site  「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 で新規登録なしでログインできます。
-　email: guest@com  password: guest123
+https://doboku-post.site  <br>「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 で新規登録なしでログインできます。<br>
+　email: guest@com<br>password: guest123
 
 イメージ図
 スクリーンショット 2020-10-28 0 27 14
