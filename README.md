@@ -121,23 +121,23 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 ・HTML(Slim,CSS(Sass)
 ・JavaScript
 
-#### 【バックエンド】
+### 【バックエンド】
 ・Ruby 2.5.1
 ・Ruby on Rails 5.2.4
 
-##### 【データベース】
+### 【データベース】
 ・MySQL2
 
-###### 【開発環境】
+#### 【開発環境】
 ・Docker, docker-compose
 
-## 【本番環境】
+### 【本番環境】
 ・AWS(VPC/EC2/ALB/RDS/Route53)
 ・Nginx、Unicorn
 ・Capistrano
 ・CircleCI/CD
 
-## 【その他使用技術】
+### 【その他使用技術】
 ・Git,GitHub
 ・RSpec
 ・Rubocop
