@@ -121,6 +121,8 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
   - Twitter(バリデーション)
   - 自分のアプリ投稿
   - 自分のBook投稿
+  
+  ![テキスト](https://file10-d.kuku.lu/files/20201212-1019_63408e4544b1ea35c6047a46f735ca49.png)
 
 ### アプリ投稿機能
 - アプリの名称
@@ -131,16 +133,22 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 - ジャンル(Active Hash)
 - ジャンル（Active Storage）
 
+![テキスト](https://file10-d.kuku.lu/files/20201212-1019_afce4a4e43e520cbead1be4012f56cf8.png)
+
 ### 面接カレンダー機能
 - 日付選択
 - 名前・時間の入力ボタン
 - カレンダー保存
 - カレンダー一覧表示
 
+![テキスト](https://file10-d.kuku.lu/files/20201212-1019_809b032a71ed868e565beef96b162211.png)
+
 ### ユーザーリスト機能
 - お名前
 - 年齢
 - Twitter（リンク指定）
+
+![テキスト]()
 
 ### Bookシェア機能
 - 本のタイトル
@@ -151,11 +159,17 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 - KindleのURL(バリデーション)
 - Kindleの画像（Active Storage）
 
+![テキスト](https://file10-d.kuku.lu/files/20201212-1019_b9d29a95fcf0736ba68772fdf5836115.png)
+
+### 転職サポートプラン
+![テキスト](https://file10-d.kuku.lu/files/20201212-1019_80ca26b1326eddc9c4135b80bd61a336.png)
+
 
 ### テストコード（Rspec）
-1. user.rb
-2. prototype.rb
-3. book/rb
+1. user_spec.rb
+2. prototype_spec.rb
+3. book_spec.rb
+![テキスト](https://file4-d.kuku.lu/files/20201212-1026_6fdbc48513d93f4a212f398115af15f9.png)
 
 # :triangular_flag_on_post: 課題、今後実装したい機能
 より使いやすいアプリケーションを目指し、UI/UXを改善する
