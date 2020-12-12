@@ -6,7 +6,7 @@
 🌐 URL
 https://doboku-post.site  <br>「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 で新規登録なしでログインできます。<br>
 email: guest@com<br>  password: guest123<br>
-![トップ画像](https://d.kuku.lu/84e0c9396f)
+![代替テキスト](https://vps15-d.kuku.lu/files/20201212-0748_b88f34fcccf502e00a8bbe6172b3721b.png)
 
 # :mag_right: なぜこのサービスを作ったか:question:
 学生時代に海外で一人旅をしていた時、観光客の立場として以下のような不安や問題点を感じました。
