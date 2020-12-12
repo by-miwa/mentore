@@ -256,7 +256,7 @@ AWS(ACM,EC2,ALB,ECR,ECS,RDS,Route53,VPC,S3)
 | occupation_id | integer | null: false |
 | study_id      | integer | null: false |
 | age_id        | integer | null: false |
-| sns           | string  |             |
+| sns           | string  | null: false |
 
 
 ### Association
@@ -290,7 +290,7 @@ AWS(ACM,EC2,ALB,ECR,ECS,RDS,Route53,VPC,S3)
 | reed       | integer    | null: false |
 | understand | text       | null: false |
 | text       | text       | null: false |
-| action     | text       | null: false |
+| action     | text       |             |
 | link       | text       | null: false |
 | user       | references | null: false, foreign_key: true |
 
