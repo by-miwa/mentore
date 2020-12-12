@@ -116,19 +116,19 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 
 
 # :computer::sparkles:使用技術・環境
-## 【フロントエンド】
+### 【フロントエンド】
 ・Bootstrap4
 ・HTML(Slim,CSS(Sass)
 ・JavaScript
 
-## 【バックエンド】
+#### 【バックエンド】
 ・Ruby 2.5.1
 ・Ruby on Rails 5.2.4
 
-## 【データベース】
+##### 【データベース】
 ・MySQL2
 
-## 【開発環境】
+###### 【開発環境】
 ・Docker, docker-compose
 
 ## 【本番環境】
