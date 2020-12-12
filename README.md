@@ -6,7 +6,7 @@
 🌐 URL
 http://3.140.60.122/ <br>「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 で新規登録なしでログインできます。<br>
 email: guest@com<br>  password: guest123<br>
-![代替テキスト](https://vps15-d.kuku.lu/files/20201212-0748_b88f34fcccf502e00a8bbe6172b3721b.png)
+![テキスト](https://vps15-d.kuku.lu/files/20201212-1010_30d1e6304ea134e0d89a4c934f7a9f05.png)
 
 # :mag_right: なぜこのサービスを作ったか:question:
 私がエンジニアとしての転職活動をしている中で、初学者の立場として以下のようなサービスがあればと感じていました。
@@ -152,7 +152,7 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 - Kindleの画像（Active Storage）
 
 
-テストコード（Rspec）
+### テストコード（Rspec）
 1. user.rb
 2. prototype.rb
 3. book/rb
@@ -229,6 +229,9 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 
 - belongs_to :users
 - belongs_to :prototype
+
+![テキスト](https://file7-d.kuku.lu/files/20201212-1011_ab2fc05cfe3b4ffc690888185bac0bc3.png)
+
 
 # :high_brightness:About me
 現在、23歳でエンジニア転職を目指しております。<br>バックエンドエンジニアを目指しポートフォリオの作成・改善、アウトプットを行っております。
