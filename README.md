@@ -115,10 +115,10 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 - ゲストログイン
 - マイページにて以下の投稿の一覧表示
   - 自己紹介
-  - 前職
-  - 学習進捗
-  - 年齢
-  - Twitter
+  - 前職(Active Hash)
+  - 学習進捗(Active Hash)
+  - 年齢(Active Hash)
+  - Twitter(バリデーション)
   - 自分のアプリ投稿
   - 自分のBook投稿
 
@@ -127,9 +127,20 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 - 紹介文
 - コンセプト
 - アプリのURL
-- GitHub
+- GitHub(バリデーション)
 - ジャンル(Active Hash)
 - ジャンル（Active Storage）
+
+### 面接カレンダー機能
+- 日付選択
+- 名前・時間の入力ボタン
+- カレンダー保存
+- カレンダー一覧表示
+
+### ユーザーリスト機能
+- お名前
+- 年齢
+- Twitter（リンク指定）
 
 ### Bookシェア機能
 - 本のタイトル
@@ -137,8 +148,8 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 - 学んだ単語
 - 本の感想
 - 行動プラン
-- KindleのURL(Active Hash)
-- ジャンル（Active Storage）
+- KindleのURL(バリデーション)
+- Kindleの画像（Active Storage）
 
 
 テストコード（Rspec）
