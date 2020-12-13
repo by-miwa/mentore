@@ -93,20 +93,19 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 ・Ruby on Rails 6.0.3.4<br>
 
 ### 【データベース】
-・MySQL2<br>
-
-### 【開発環境】
-・
+・MySQL5.6.47<br>
 
 ### 【本番環境】
 ・AWS(S3/EC2)<br>
 ・Nginx、Unicorn<br>
-・Capistrano<br>
 
 ### 【その他使用技術】
 ・Git,GitHub<br>
 ・RSpec<br>
 ・Rubocop<br>
+・Capistrano<br>
+
+![テキスト](https://file3-d.kuku.lu/files/20201213-0255_519b1e8b0a3e30e5694e63618d9502ad.png)
 
 
 # :pencil: 機能一覧
@@ -253,4 +252,3 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 
 - **[Twitter](https://twitter.com/by_miwa30)**
 - **[Qiita](https://qiita.com/by-miwa30)**
-- **[面接練習の記録](https://tech-camp.in/note/)**
