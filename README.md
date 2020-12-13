@@ -3,10 +3,9 @@
 「駆け出しエンジニア同士で繋がろう！」  <br>Mentoreはエンジニア転職を目指す仲間を増やせるマッチングアプリです！<br><br>
 **ログイン方法**
 
-🌐 URL
-https://doboku-post.site  <br>「右上のログインボタン」 → 「ゲストログイン（閲覧用）」 で新規登録なしでログインできます。<br>
-email: guest@com<br>  password: guest123<br>
-![代替テキスト](https://vps15-d.kuku.lu/files/20201212-0748_b88f34fcccf502e00a8bbe6172b3721b.png)
+### 🌐 URL http://3.140.60.122/ <br> 「右上のゲストログイン（閲覧用）」 でログインできます。<br>
+**email: guest@com**<br>  **password: guest123**<br>
+![テキスト](https://vps15-d.kuku.lu/files/20201212-1010_30d1e6304ea134e0d89a4c934f7a9f05.png)
 
 # :mag_right: なぜこのサービスを作ったか:question:
 私がエンジニアとしての転職活動をしている中で、初学者の立場として以下のようなサービスがあればと感じていました。
@@ -18,7 +17,7 @@ email: guest@com<br>  password: guest123<br>
 また、コロナ禍でエンジニア転職を目指す求人者が急増したことで
 「自分と同じようなサービスを求めている人がいるのではないか」 と感じました。
 
-そんな中、同じくエンジニア転職を目指す知り合いからも「ポートフォリオのテーマが思い浮かばない。ヒントをもらいたい。。。」
+そんな中、同じくエンジニア転職を目指す知り合いからも「ポートフォリオのテーマが思い浮かばない。ヒントをもらいたい...」
 
 
 上記の経験を踏まえ、 「駆け出しエンジニア同士の交流と、
@@ -42,6 +41,8 @@ email: guest@com<br>  password: guest123<br>
 
 - 優秀な駆け出しエンジニアを広告費を出さずにTwitterでスカウトできる
 - 新任面接官の模擬面接の場になる
+
+![テキスト](https://file10-d.kuku.lu/files/20201212-1019_d0055727074e4909ea14f15e9b80a0c7.png)
 
 # :books: 工夫した点
 「直感的なわかりやすさ・使いやすさ」 を重視し、寒色を基調としシンプルで、尚かつアイコンを多く取り入れることにこだわりました。<br>
@@ -92,56 +93,84 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 ・Ruby on Rails 6.0.3.4<br>
 
 ### 【データベース】
-・MySQL2<br>
-
-### 【開発環境】
-・
+・MySQL5.6.47<br>
 
 ### 【本番環境】
 ・AWS(S3/EC2)<br>
 ・Nginx、Unicorn<br>
-・Capistrano<br>
 
 ### 【その他使用技術】
 ・Git,GitHub<br>
 ・RSpec<br>
 ・Rubocop<br>
+・Capistrano<br>
+
+![テキスト](https://file3-d.kuku.lu/files/20201213-0255_519b1e8b0a3e30e5694e63618d9502ad.png)
 
 
 # :pencil: 機能一覧
 
-ユーザー機能
-ユーザー登録・編集・削除（deviseのgemを使用)
-ゲストログイン
-プロフィール画像の登録・編集（carrierwaveのgemを使用）
-マイページにて以下の投稿の一覧表示
-全ての自分の投稿
-自分の投稿で申し込みがあった投稿
-申込済みの投稿
-お気に入りに追加した投稿
-投稿機能
-ツアーゲストとツアーキャスト両方の立場による投稿・編集・削除
-一覧表示、詳細表示
-地図表示（Google Maps API）
-タグ付け（acts-as-taggable-onのgemを使用）
-申し込み・キャンセル
-申込済みユーザーの表示（他人の投稿の場合は人数のみを表示）
-お気に入り追加（非同期）
-検索（キーワード検索・タグ検索）
-メッセージ機能
-ユーザー同士のメッセージ送信（非同期、画像も送信可）
-自動更新
-トーク履歴の表示
+### ユーザー機能
+- ユーザー登録・編集（deviseのgemを使用)
+- ゲストログイン
+- マイページにて以下の投稿の一覧表示
+  - 自己紹介
+  - 前職(Active Hash)
+  - 学習進捗(Active Hash)
+  - 年齢(Active Hash)
+  - Twitter(バリデーション)
+  - 自分のアプリ投稿
+  - 自分のBook投稿
+  
+  ![テキスト](https://file10-d.kuku.lu/files/20201212-1019_63408e4544b1ea35c6047a46f735ca49.png)
+
+### アプリ投稿機能
+- アプリの名称
+- 紹介文
+- コンセプト
+- アプリのURL
+- GitHub(バリデーション)
+- ジャンル(Active Hash)
+- ジャンル（Active Storage）
+
+![テキスト](https://file10-d.kuku.lu/files/20201212-1019_afce4a4e43e520cbead1be4012f56cf8.png)
+
+### 面接カレンダー機能
+- 日付選択
+- 名前・時間の入力ボタン
+- カレンダー保存
+- カレンダー一覧表示
+
+![テキスト](https://file10-d.kuku.lu/files/20201212-1019_809b032a71ed868e565beef96b162211.png)
+
+### ユーザーリスト機能
+- お名前
+- 年齢
+- Twitter（リンク指定）
+
+![テキスト](https://vps13-d.kuku.lu/files/20201212-1031_b976a6ec2d121e3e8733ca7d2ac66b70.png)
+
+### Bookシェア機能
+- 本のタイトル
+- 本の種類
+- 学んだ単語
+- 本の感想
+- 行動プラン
+- KindleのURL(バリデーション)
+- Kindleの画像（Active Storage）
+
+![テキスト](https://file10-d.kuku.lu/files/20201212-1019_b9d29a95fcf0736ba68772fdf5836115.png)
+
+### 転職サポートプラン
+![テキスト](https://file10-d.kuku.lu/files/20201212-1019_80ca26b1326eddc9c4135b80bd61a336.png)
 
 
-テストコード（Rspec）
-1. 
-2. 
-3. 
+### テストコード（Rspec）
+1. user_spec.rb
+2. prototype_spec.rb
+3. book_spec.rb
+![テキスト](https://file4-d.kuku.lu/files/20201212-1026_6fdbc48513d93f4a212f398115af15f9.png)
 
-# :triangular_flag_on_post: 課題、今後実装したい機能
-より使いやすいアプリケーションを目指し、UI/UXを改善する
-新機能の実装
 
 # テーブル設計
 
@@ -212,11 +241,11 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 - belongs_to :users
 - belongs_to :prototype
 
+![テキスト](https://file7-d.kuku.lu/files/20201212-1011_ab2fc05cfe3b4ffc690888185bac0bc3.png)
+
+
 # :high_brightness:About me
 現在、23歳でエンジニア転職を目指しております。<br>バックエンドエンジニアを目指しポートフォリオの作成・改善、アウトプットを行っております。
 
 - **[Twitter](https://twitter.com/by_miwa30)**
 - **[Qiita](https://qiita.com/by-miwa30)**
-- **[面接練習の記録](https://tech-camp.in/note/)**
-
-
