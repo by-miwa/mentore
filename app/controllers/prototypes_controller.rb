@@ -34,20 +34,19 @@ class PrototypesController < ApplicationController
   def update
     @prototype = Prototype.find(params[:id])
     if @prototype.update(prototype_params)
-    redirect_to prototype_path  
+      redirect_to prototype_path
     else
-    render :edit
+      render :edit
     end
   end
 
   def destroy
     @prototype = Prototype.find(params[:id])
-    if @prototype.destroy
-    redirect_to root_path
-    end
+    redirect_to root_path if @prototype.destroy
   end
 
   private
+
   def prototype_params
     params.require(:prototype).permit(:title, :text, :concept, :appli, :github, :genre_id, :image).merge(user_id: current_user.id)
   end

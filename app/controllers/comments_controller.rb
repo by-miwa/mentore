@@ -6,11 +6,12 @@ class CommentsController < ApplicationController
     else
       @prototype = @comment.prototype
       @comments = @prototype.comments
-      render "prototypes/show"
+      render 'prototypes/show'
     end
   end
 
- private
+  private
+
   def comment_params
     params.require(:comment).permit(:text).merge(user_id: current_user.id, prototype_id: params[:prototype_id])
   end

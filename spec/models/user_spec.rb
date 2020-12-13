@@ -10,37 +10,37 @@ RSpec.describe User, type: :model do
     it 'emailが空では登録できない' do
       @user.email = nil
       @user.valid?
-      expect(@user.errors.full_messages).to include("Eメールを入力してください")
+      expect(@user.errors.full_messages).to include('Eメールを入力してください')
     end
 
     it 'passwordが空では登録できない' do
       @user.password = nil
       @user.valid?
-      expect(@user.errors.full_messages).to include("パスワードを入力してください")
+      expect(@user.errors.full_messages).to include('パスワードを入力してください')
     end
 
     it 'nameが空だと登録できない' do
       @user.name = nil
       @user.valid?
-      expect(@user.errors.full_messages).to include("ユーザー名を入力してください")
+      expect(@user.errors.full_messages).to include('ユーザー名を入力してください')
     end
 
     it 'profileが空では登録できない' do
       @user.profile = nil
       @user.valid?
-      expect(@user.errors.full_messages).to include("プロフィールを入力してください")
+      expect(@user.errors.full_messages).to include('プロフィールを入力してください')
     end
 
     it 'occupation_idが空では登録できない' do
       @user.occupation_id = nil
       @user.valid?
-      expect(@user.errors.full_messages).to include("前職を入力してください")
+      expect(@user.errors.full_messages).to include('前職を入力してください')
     end
 
     it 'study_idが空では登録できない' do
       @user.study_id = nil
       @user.valid?
-      expect(@user.errors.full_messages).to include( "学習進捗を入力してください")
+      expect(@user.errors.full_messages).to include('学習進捗を入力してください')
     end
 
     it 'age_idが空では登録できない' do
@@ -52,7 +52,7 @@ RSpec.describe User, type: :model do
     it 'snsが空では登録できない' do
       @user.sns = nil
       @user.valid?
-      expect(@user.errors.full_messages).to include("Twitterを入力してください")
+      expect(@user.errors.full_messages).to include('Twitterを入力してください')
     end
 
     # id = 1では保存できない制限のテスト ▼

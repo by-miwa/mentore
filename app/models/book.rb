@@ -8,10 +8,9 @@ class Book < ApplicationRecord
   validates :link, presence: true
   validates :image, presence: true, unless: :was_attached?
 
-  validates :link, format: { with: /amazon.co.jp/}
+  validates :link, format: { with: /amazon.co.jp/ }
 
   def was_attached?
-    self.image.attached?
+    image.attached?
   end
-
 end

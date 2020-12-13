@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-  
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :occupation
   belongs_to :study
@@ -10,7 +9,7 @@ class User < ApplicationRecord
 
   PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
   validates_format_of :password, with: PASSWORD_REGEX
-    
+
   with_options presence: true do
     validates :name
     validates :profile
@@ -20,13 +19,13 @@ class User < ApplicationRecord
     validates :sns
   end
 
-    validates :occupation_id, numericality: { other_than: 1 }
-    validates :study_id, numericality: { other_than: 1 }
-    validates :age_id, numericality: { other_than: 1 }
+  validates :occupation_id, numericality: { other_than: 1 }
+  validates :study_id, numericality: { other_than: 1 }
+  validates :age_id, numericality: { other_than: 1 }
 
-    validates :sns, format: { with: /twitter.com/}
+  validates :sns, format: { with: /twitter.com/ }
 
-    has_many :prototypes
-    has_many :comments
-    has_many :books
+  has_many :prototypes
+  has_many :comments
+  has_many :books
 end

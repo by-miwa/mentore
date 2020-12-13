@@ -71,3 +71,6 @@ gem 'active_hash'
 gem 'rails-i18n'
 gem 'ransack'
 gem 'factory_bot_rails'
+group :development do
+  gem 'rubocop', require: false
+end

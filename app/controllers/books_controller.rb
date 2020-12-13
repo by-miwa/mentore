@@ -2,7 +2,7 @@ class BooksController < ApplicationController
   before_action :set_book, except: [:index, :new, :create]
   before_action :authenticate_user!, except: [:index, :show]
   before_action :contributor_confirmation, only: [:edit, :update, :destroy]
-  
+
   def index
     @books = Book.all
   end
@@ -17,7 +17,7 @@ class BooksController < ApplicationController
       redirect_to root_path
     else
       render :new
-    end    
+    end
   end
 
   def show
@@ -31,20 +31,19 @@ class BooksController < ApplicationController
   def update
     @book = Book.find(params[:id])
     if @book.update(book_params)
-    redirect_to book_path  
+      redirect_to book_path
     else
-    render :edit
+      render :edit
     end
   end
 
   def destroy
     @book = Book.find(params[:id])
-    if @book.destroy
-    redirect_to root_path
-    end
+    redirect_to root_path if @book.destroy
   end
 
   private
+
   def book_params
     params.require(:book).permit(:title, :reed, :understand, :text, :action, :link, :image).merge(user_id: current_user.id)
   end
@@ -56,5 +55,4 @@ class BooksController < ApplicationController
   def contributor_confirmation
     redirect_to root_path unless current_user == @book.user
   end
-
 end
