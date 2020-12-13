@@ -171,9 +171,6 @@ Rails側の記述忘れでアプリケーションサーバのUnicornが起動�
 3. book_spec.rb
 ![テキスト](https://file4-d.kuku.lu/files/20201212-1026_6fdbc48513d93f4a212f398115af15f9.png)
 
-# :triangular_flag_on_post: 課題、今後実装したい機能
-より使いやすいアプリケーションを目指し、UI/UXを改善する
-新機能の実装
 
 # テーブル設計
 
