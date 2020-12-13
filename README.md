@@ -7,7 +7,7 @@
 **email: guest@com**<br>  **password: guest123**<br>
 ![テキスト](https://vps15-d.kuku.lu/files/20201212-1010_30d1e6304ea134e0d89a4c934f7a9f05.png)
 
-# :mag_right: なぜこのサービスを作ったか:question:
+# :mag_right: なぜこのサービスを作ったのか:question:
 私がエンジニアとしての転職活動をしている中で、初学者の立場として以下のようなサービスがあればと感じていました。
 
 - **「初学者のポートフォリオとGitHubが気になる」**
