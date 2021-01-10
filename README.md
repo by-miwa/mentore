@@ -51,8 +51,6 @@
 
 
 # :eyes: 特に見てほしい点
-**開発の過程を20記事以上、Qiitaに投稿していたこと**
-**[Qiita](https://qiita.com/by-miwa30/items/ef5af6d07147ce85c179)**
 
 各機能の実装方法や解説をまとめていました。
 
@@ -64,7 +62,6 @@
 
 
 **AWSアプリの修正から自動デプロイまでの流れ**
-**[Qiita](https://qiita.com/by-miwa30/items/22cf22d61c6cd3752857)**<br>
 
 AWS自動デプロイまでの処理が終わり、ブラウザからElastic IPでアクセスしたところ「We’re sorry , but ~」というエラーに悩まされました。
 
