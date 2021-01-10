@@ -1,8 +1,7 @@
 # MEN TORE（メントレ）:bust_in_silhouette::speech_balloon:
 
 「駆け出しエンジニア同士で繋がろう！」  <br>Mentoreはエンジニア転職を目指す仲間を増やせるマッチングアプリです！<br>
-## 開発の過程を20記事以上、Qiitaに投稿しています❗
-## [Qiita](https://qiita.com/by-miwa30/items/ef5af6d07147ce85c179)<br>
+
 **ログイン方法**
 
 ### 🌐 URL http://3.140.60.122/ <br> 「右上のゲストログイン（閲覧用）」 でログインできます。<br>
