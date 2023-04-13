@@ -4,6 +4,11 @@ A–>C;
 B–>D;
 C–>D;
 
+```mermaid
+// この中にMermaid記法
+```
+
+
 # MEN TORE（メントレ）:bust_in_silhouette::speech_balloon:
 
 「駆け出しエンジニア同士で繋がろう！」  <br>Mentoreはエンジニア転職を目指す仲間を増やせるマッチングアプリです！<br>
